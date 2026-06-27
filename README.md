@@ -1,3 +1,3 @@
 # raycastingengine
-A raycasting engine coded in Python.
+A raycasting engine programmed in Python with PyGame.
 
