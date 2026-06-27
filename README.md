@@ -1,4 +1,6 @@
 # raycastingengine
+<img width="800" height="604" alt="ezgif com-video-to-gif-converter" src="https://github.com/user-attachments/assets/011f6bb2-7489-4886-bd5d-0fbb10e3d6c7" />
+
 Software-rendered 3D engine built from scratch in Python, using the same core algorithms as ID Software's _Wolfenstein 3D_ (1992)!
 
 ## How does it work?
