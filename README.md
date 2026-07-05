@@ -13,7 +13,7 @@ This replaces the naive approach of stepping along a ray in tiny increments (thi
 Each wall stores a fractional hit position (0.0–1.0) indicating exactly where within the cell the ray landed. This value selects a single column of the 64×64 texture, which is then scaled vertically to the computed wall height and blitted to the screen. N/S-facing walls receive a 35% brightness reduction relative to E/W walls, giving us a cheap directional "shading" effect. Pretty cool!
 
 ## Getting Started
-Requirements: Python3, PyGame
+you need Python3 and PyGame
 
 ```bash
 pip install pygame
