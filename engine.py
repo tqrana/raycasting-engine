@@ -2,7 +2,7 @@ import pygame
 from pygame.locals import *
 import math
 
-# CONSTANTS
+# CONSTANTS 
 SCREEN_W   = 640
 SCREEN_H   = 480
 HALF_H     = SCREEN_H // 2
@@ -12,6 +12,7 @@ ROT_SPEED  = 0.03
 TEX_SIZE   = 64
 MINIMAP_S  = 8
 
+# game map generated with claude
 game_map = [
     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
     [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
@@ -193,13 +194,13 @@ def main():
 
                 brightness = max(30, int(220 * (1 - dist / MAX_DEPTH)))
                 if side == 1:
-                    brightness = int(brightness * 0.65)
+                    brightness = int(brightness *0.65)
                 col.fill((brightness, brightness, brightness),
                          special_flags=pygame.BLEND_RGB_MULT)
 
                 screen.blit(col, (x, wall_top))
 
-        draw_minimap(screen, px, py, dir_x, dir_y)
+        draw_minimap(screen,px, py, dir_x, dir_y)
 
         screen.blit(font.render(f'FPS: {int(clock.get_fps())}', True, (255, 0, 100)),
                     (8, 8))
